@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
+    <link href="https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>QuickTimer</title>
+</head>
+<body>
+    <div class="stopwatch-container">
+        <div class="timer-container">
+            <div class="timer-circle">
+                <div class="timer-text">
+                    <p id = "stopwatch-timer-text-mins">00</p>
+                    <p>:</p>
+                    <p id = "stopwatch-timer-text-secs">00</p>
+                </div>
+                <div class="stopwatch-controls">
+                    <span onclick="clearStopwatch();" class="material-icons">refresh</span>
+                    <div class="player-control" onclick = "toggleStopwatch();">
+                        <span class="material-icons hidden">pause</span>
+                        <span class="material-icons">play_arrow</span>
+                    </div>
+                    <span class="material-icons" onclick="lapStopWatch();">timer</span>
+                </div>
+            </div>
+            <div class="switch-timer-container">
+                <button>Timer</button>
+            </div>
+        </div>
+       <div class="lap-timer-container">
+            <div class="lap-timer-inner">
+                <header>Lap Times</header>
+                <div id = "lap-times">
+                    <div id = "lap-copy" class="hidden lap-time-copy">
+                        <p class = "lap-number">Lap x</p>
+                        <p class = "lap-time">0:00</p>
+                        <span class="divider"></span>
+                    </div>
+                </div>
+            </div>
+            
+       </div> 
+       
+    </div>
+    <div class="timer-container">
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
